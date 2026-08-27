@@ -1,11 +1,17 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Vala and GTK SDK",
   "description": "Vala compiler with GTK, libadwaita and GObject development files.",
   "version": "0.56.18",
-  "image": "ghcr.io/containerpak/sdk-vala:main",
-  "binaries": ["/usr/bin/valac", "/usr/bin/vapigen", "/usr/bin/pkg-config", "/usr/bin/meson", "/usr/bin/ninja"],
+  "image": "ghcr.io/containerpak/sdk-vala@sha256:772fa5bf02d52fbd53ce2e8236b38be5386309fc2e512ff5d9f1aa85136c65ae",
+  "binaries": [
+    "/usr/bin/valac",
+    "/usr/bin/vapigen",
+    "/usr/bin/pkg-config",
+    "/usr/bin/meson",
+    "/usr/bin/ninja"
+  ],
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
@@ -14,21 +20,18 @@
     "slot": "sdk.vala",
     "mode": "exclusive",
     "exports": {
-      "path": ["/usr/bin"]
+      "path": [
+        "/usr/bin"
+      ]
     }
   },
   "idle_time": 0,
   "override": {
-    "socketX11": false,
     "socketWayland": false,
     "socketPulseAudio": false,
-    "socketSessionBus": false,
-    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "socketAtSpiBus": false,
-    "socketBluetooth": false,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,
@@ -40,7 +43,12 @@
     "deviceAll": false,
     "notification": false,
     "openURI": false,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -48,7 +56,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }

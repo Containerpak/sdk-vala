@@ -4,7 +4,7 @@
   "name": "Vala and GTK SDK",
   "description": "Vala compiler with GTK, libadwaita and GObject development files.",
   "version": "0.56.18",
-  "image": "ghcr.io/containerpak/sdk-vala@sha256:2e5d93dd94670a6374c0f1376df945cb4847632b9286bd7846c158903c57b5c7",
+  "image": "ghcr.io/containerpak/sdk-vala@sha256:65e76546ad691c11dd292b64614b633f898dc57cf70e33d6d39ad9b1a399492f",
   "binaries": [
     "/usr/bin/valac",
     "/usr/bin/vapigen",
